@@ -1,0 +1,38 @@
+.element {
+  position: relative;
+  top: 20px;
+}
+
+/* moves from top of original by 20px */
+
+.parent {
+  border: 2px solid #0074d9;
+  color: #0074d9;
+  padding: 20px;
+}
+
+.element {
+  border: 1px dotted #000;
+  background-color: #eee;
+  padding: 20px;
+  color: #000;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+/* moves to bottom of page (not just window), keeps to edges. parent doesnt matter */
+
+.element {
+  background-color: lighten(#0074d9, 20);
+  opacity: .85;
+  padding: 20px;
+  color: rgba(255,255,255,.9);
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+/* keeps at bottom, but is always there */
